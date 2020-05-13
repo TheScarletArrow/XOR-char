@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/anton/CLionProjects/encryption/main.c
+stdio.h
+-
+stdbool.h
+-
+string.h
+-
+bitset
+-
+stdlib.h
+-
+
