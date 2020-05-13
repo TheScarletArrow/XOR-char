@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/anton/CLionProjects/encryption/main.c" "C:/Users/anton/CLionProjects/encryption/cmake-build-debug/CMakeFiles/encryption.dir/main.c.obj"
+  "/home/anton/XORencruption/main.c" "/home/anton/XORencruption/cmake-build-debug/CMakeFiles/encryption.dir/main.c.o"
   )
-set(CMAKE_C_COMPILER_ID "MSVC")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

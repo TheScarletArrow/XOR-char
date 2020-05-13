@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/encryption.dir/main.c.obj"
-  "encryption.exe"
-  "encryption.exe.manifest"
-  "encryption.lib"
+  "CMakeFiles/encryption.dir/main.c.o"
+  "encryption"
   "encryption.pdb"
 )
 
