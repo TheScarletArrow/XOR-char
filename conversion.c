@@ -43,7 +43,19 @@ int main(int argc, char *argv[]) {
         printf("Arguments too low\n");
         exit(EXIT_FAILURE);
     }
-
+    char cases[10];
+    printf("Send or receive?");
+    switch (cases) {
+        case 'Send':{
+        //#TODO SEND;
+        break;
+        }
+        case 'Receive':{
+            //#TODO
+            break;
+        }
+    }
+    //#TODO argv[1] - send/receive
     if (pipe(pipefd_1) == -1)
     {
         printf("pipe1 error");
