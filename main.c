@@ -6,14 +6,19 @@
 #define max(a,b) a>b?a:b
 #define min(a,b) a<b?a:b
 int intlength(int);
+int WordLengthFromBin(int number);
 int CharToBin(char ch){
-int val;
-    for (int i=7;i>=0;i--)
+    int val;
+    int temp;
+    for (int i=7;i>=0;--i)
     {
-  val=    putchar((ch&(1<<i))?'1':'0');
+        val=putchar((ch&(1<<i))?'1':'0');
+
     }
-return val;
-};
+
+    return val;
+    };
+
 int main() {
 
     char inputString[1024];
@@ -39,17 +44,15 @@ int choice;
 //puts("\n\nGreat, now mask");
 //fgets(mask, sizeof(mask), stdin);
 
-int first;
+unsigned long long first=0; //string to binary
+unsigned long long number;
 for (int i=0;i<strlen(inputString);i++)
-   first= CharToBin(inputString[i]);
-printf("%l", first);
+   first = CharToBin(inputString[i]);
 
+fscanf(stdout, "%llu", number);
+printf("%llu", number);
 //#TODO need to make binary int to char
-for(int i=0; i<intlength(first); i+=8){
-    outputStringEncrypted[i] = (char)first;
-}
-
-puts(outputStringEncrypted);
+//#TODO
 return 0;
 }
 
@@ -62,4 +65,9 @@ int intlength(int number)
         number/=10;
     }
     return length;
+}
+
+int WordLengthFromBin(int number)
+{
+    return (int)(intlength(number)/8);
 }
